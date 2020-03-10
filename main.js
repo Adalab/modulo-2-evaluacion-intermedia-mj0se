@@ -4,7 +4,7 @@ let butTest = document.querySelector('.js-btn-test');
 let randomNumber = getRandomNumber(100);
 let textAdd = document.querySelector('.js-text');
 let numberValue = document.querySelector('.js-btn-number');
-const btnReset = document.querySelector('.js-btn-reset');
+
 const accountant = document.querySelector('.js-text-try');
 
 // número random
@@ -44,7 +44,7 @@ var count_click = 0;
 function count_click_add() {
 
     count_click += 1;
-    accountant.innerHTML = 'Número de intentos: ';
-}
+    accountant.innerHTML = 'Número de intentos: ' + count_click;
 
-accountant.addEventListener('click', count_click_add);
+}
+butTest.addEventListener('click', count_click_add);
